@@ -20,10 +20,12 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: CreditCardFactory
     path: Bank.Domain/CreditCarFactory.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Fábrica simple para obtener instancias de tarjetas de crédito según el tipo.
+  example: []
   syntax:
     content: public class CreditCardFactory
     content.vb: Public Class CreditCardFactory
@@ -55,17 +57,21 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: GetCreditCard
     path: Bank.Domain/CreditCarFactory.cs
-    startLine: 4
+    startLine: 12
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Devuelve una instancia de ICreditCard según el tipo especificado.
+  example: []
   syntax:
     content: public static ICreditCard GetCreditCard(string cardType)
     parameters:
     - id: cardType
       type: System.String
+      description: 'Tipo de tarjeta: MoneyBack, Titanium, Platinum.'
     return:
       type: Bank.Domain.ICreditCard
+      description: Instancia de ICreditCard correspondiente.
     content.vb: Public Shared Function GetCreditCard(cardType As String) As ICreditCard
   overload: Bank.Domain.CreditCardFactory.GetCreditCard*
   nameWithType.vb: CreditCardFactory.GetCreditCard(String)

@@ -22,10 +22,12 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: ICreditCard
     path: Bank.Domain/ICreditCard.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Interfaz para tarjetas de crédito.
+  example: []
   syntax:
     content: public interface ICreditCard
     content.vb: Public Interface ICreditCard
@@ -47,14 +49,17 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: GetCardType
     path: Bank.Domain/ICreditCard.cs
-    startLine: 4
+    startLine: 11
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Devuelve el tipo de tarjeta de crédito.
+  example: []
   syntax:
     content: string GetCardType()
     return:
       type: System.String
+      description: Tipo de tarjeta.
     content.vb: Function GetCardType() As String
   overload: Bank.Domain.ICreditCard.GetCardType*
 - uid: Bank.Domain.ICreditCard.GetCreditLimit
@@ -75,14 +80,17 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: GetCreditLimit
     path: Bank.Domain/ICreditCard.cs
-    startLine: 5
+    startLine: 16
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Devuelve el límite de crédito de la tarjeta.
+  example: []
   syntax:
     content: int GetCreditLimit()
     return:
       type: System.Int32
+      description: Límite de crédito.
     content.vb: Function GetCreditLimit() As Integer
   overload: Bank.Domain.ICreditCard.GetCreditLimit*
 - uid: Bank.Domain.ICreditCard.GetAnnualCharge
@@ -103,14 +111,17 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: GetAnnualCharge
     path: Bank.Domain/ICreditCard.cs
-    startLine: 6
+    startLine: 21
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Devuelve el cargo anual de la tarjeta.
+  example: []
   syntax:
     content: int GetAnnualCharge()
     return:
       type: System.Int32
+      description: Cargo anual.
     content.vb: Function GetAnnualCharge() As Integer
   overload: Bank.Domain.ICreditCard.GetAnnualCharge*
 references:

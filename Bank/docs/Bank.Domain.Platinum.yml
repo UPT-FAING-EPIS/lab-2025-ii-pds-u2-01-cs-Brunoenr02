@@ -22,10 +22,12 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: Platinum
     path: Bank.Domain/Platinum.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Implementación de tarjeta Platinum.
+  example: []
   syntax:
     content: 'public class Platinum : ICreditCard'
     content.vb: Public Class Platinum Implements ICreditCard
@@ -59,15 +61,17 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: GetCardType
     path: Bank.Domain/Platinum.cs
-    startLine: 4
+    startLine: 11
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Devuelve el tipo de tarjeta Platinum.
   example: []
   syntax:
     content: public string GetCardType()
     return:
       type: System.String
+      description: "\"Platinum Plus\""
     content.vb: Public Function GetCardType() As String
   overload: Bank.Domain.Platinum.GetCardType*
   implements:
@@ -90,15 +94,17 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: GetCreditLimit
     path: Bank.Domain/Platinum.cs
-    startLine: 8
+    startLine: 19
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Devuelve el límite de crédito para Platinum.
   example: []
   syntax:
     content: public int GetCreditLimit()
     return:
       type: System.Int32
+      description: Límite de crédito.
     content.vb: Public Function GetCreditLimit() As Integer
   overload: Bank.Domain.Platinum.GetCreditLimit*
   implements:
@@ -121,15 +127,17 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: GetAnnualCharge
     path: Bank.Domain/Platinum.cs
-    startLine: 12
+    startLine: 27
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Devuelve el cargo anual para Platinum.
   example: []
   syntax:
     content: public int GetAnnualCharge()
     return:
       type: System.Int32
+      description: Cargo anual.
     content.vb: Public Function GetAnnualCharge() As Integer
   overload: Bank.Domain.Platinum.GetAnnualCharge*
   implements:

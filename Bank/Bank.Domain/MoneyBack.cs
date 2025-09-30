@@ -1,16 +1,31 @@
 namespace Bank.Domain
 {
+    /// <summary>
+    /// Implementación de tarjeta MoneyBack.
+    /// </summary>
     public class MoneyBack : ICreditCard
     {
-        public string GetCardType()
+    /// <summary>
+    /// Devuelve el tipo de tarjeta MoneyBack.
+    /// </summary>
+    /// <returns>"MoneyBack"</returns>
+    public string GetCardType()
         {
             return "MoneyBack";
         }
-        public int GetCreditLimit()
+    /// <summary>
+    /// Devuelve el límite de crédito para MoneyBack.
+    /// </summary>
+    /// <returns>Límite de crédito.</returns>
+    public int GetCreditLimit()
         {
             return 15000;
         }
-        public int GetAnnualCharge()
+    /// <summary>
+    /// Devuelve el cargo anual para MoneyBack.
+    /// </summary>
+    /// <returns>Cargo anual.</returns>
+    public int GetAnnualCharge()
         {
             return 500;
         }

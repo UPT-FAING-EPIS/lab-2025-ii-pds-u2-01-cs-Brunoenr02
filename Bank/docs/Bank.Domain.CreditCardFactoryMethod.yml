@@ -21,10 +21,12 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: CreditCardFactoryMethod
     path: Bank.Domain/CreditCardAbstractMethod.cs
-    startLine: 2
+    startLine: 5
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Clase base para el patrón Factory Method de tarjetas de crédito.
+  example: []
   syntax:
     content: public abstract class CreditCardFactoryMethod
     content.vb: Public MustInherit Class CreditCardFactoryMethod
@@ -60,14 +62,17 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: MakeProduct
     path: Bank.Domain/CreditCardAbstractMethod.cs
-    startLine: 4
+    startLine: 11
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Método que debe implementar cada fábrica concreta para crear el producto.
+  example: []
   syntax:
     content: protected abstract ICreditCard MakeProduct()
     return:
       type: Bank.Domain.ICreditCard
+      description: Instancia de ICreditCard.
     content.vb: Protected MustOverride Function MakeProduct() As ICreditCard
   overload: Bank.Domain.CreditCardFactoryMethod.MakeProduct*
 - uid: Bank.Domain.CreditCardFactoryMethod.CreateProduct
@@ -88,14 +93,17 @@ items:
       repo: https://github.com/UPT-FAING-EPIS/lab-2025-ii-pds-u2-01-cs-Brunoenr02.git
     id: CreateProduct
     path: Bank.Domain/CreditCardAbstractMethod.cs
-    startLine: 7
+    startLine: 18
   assemblies:
   - Bank.Domain
   namespace: Bank.Domain
+  summary: Crea y retorna el producto usando la fábrica concreta.
+  example: []
   syntax:
     content: public ICreditCard CreateProduct()
     return:
       type: Bank.Domain.ICreditCard
+      description: Instancia de ICreditCard creada por la fábrica.
     content.vb: Public Function CreateProduct() As ICreditCard
   overload: Bank.Domain.CreditCardFactoryMethod.CreateProduct*
 references:

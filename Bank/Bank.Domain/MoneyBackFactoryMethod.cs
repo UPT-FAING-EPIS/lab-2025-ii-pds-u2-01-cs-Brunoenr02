@@ -1,8 +1,15 @@
 namespace Bank.Domain
 {
+    /// <summary>
+    /// Fábrica concreta para crear tarjetas MoneyBack.
+    /// </summary>
     public class MoneyBackFactoryMethod : CreditCardFactoryMethod
     {
-        protected override ICreditCard MakeProduct()
+    /// <summary>
+    /// Crea una instancia de MoneyBack.
+    /// </summary>
+    /// <returns>Instancia de MoneyBack.</returns>
+    protected override ICreditCard MakeProduct()
         {
             ICreditCard product = new MoneyBack();
             return product;
