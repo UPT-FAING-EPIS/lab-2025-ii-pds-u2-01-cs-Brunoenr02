@@ -22,7 +22,7 @@ jobs:
         run: dotnet tool install -g docfx
 
       - name: Restore and build solution
-        run: dotnet build
+        run: dotnet build Bank/Bank.sln
 
       - name: Generate DocFX metadata
         run: docfx metadata Bank/docfx.json
