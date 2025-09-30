@@ -45,3 +45,5 @@ ICreditCard <|.. Titanium
 CreditCardFactoryMethod <|-- TitaniumFactoryMethod
 
 ```
+
+mermaid.md
